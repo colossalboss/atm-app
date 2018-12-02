@@ -43,7 +43,9 @@ $(function(){
       console.log('hello!');
       setTimeout(function() {
         $('#display').empty();
+        $('#you').html('');
         $('#display').append('<div class="select"><h1>Done!</h1><p>Collect your cash</p><i class="fa fa-money" aria-hidden="true"></i></div>');
+        $('#display').append('<h2 class="select">Have a nice day.');
       }, 1500);
     })
   });
