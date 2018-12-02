@@ -7,6 +7,11 @@ $(function(){
     $('#display').load('first-page.html');
   }
 
-  $('#btn').on('click', display);
+  $('#btn').on('click', function() {
+    let inputDiv = document.getElementById('input-field');
+    if (inputDiv.innerHTML !== '') {
+      display();
+    }
+  });
 
 });
