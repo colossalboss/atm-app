@@ -1,17 +1,26 @@
-$(function(){
+// $(function(){
+  let input = document.getElementById('input-field');
 
-  function display(e) {
+  function check(e) {
     e.preventDefault();
-    $('#display').empty();
-    $('#prompt').remove();
-    $('#display').load('first-page.html');
+    let text;
+    if ($('#input-field').val() !== '') {
+      text = $('#input-field').val();
+      display(text);
+    } else {
+      $('#text').text('Please input your name above');
+    }
   }
 
-  $('#btn').on('click', function() {
-    let inputDiv = document.getElementById('input-field');
-    if (inputDiv.innerHTML !== '') {
-      display();
-    }
-  });
+  function display(text) {
+    let name = $('#input-field').val();
+      $('#display').empty();
+      $('#prompt').remove();
+      $('#display').load('first-page.html');
+      $('#you').html('Welcome ' + text + '!');
+      console.log($('#name'));
+  }
 
-});
+  $('#btn').on('click', check)
+
+// });
