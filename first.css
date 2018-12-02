@@ -8,7 +8,8 @@ body {
   padding: 1px;
 }
 
-#title {
+#title,
+.select {
   text-align: center;
 }
 

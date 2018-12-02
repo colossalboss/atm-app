@@ -21,6 +21,12 @@ $(function(){
       console.log($('#name'));
   }
 
-  $('#btn').on('click', check)
+  function withdraw() {
+    $('#display').empty();
+    $('#display').load('withdraw.html');
+  }
+
+  $('#btn').on('click', check);
+  $('#display').on('click', '#withdraw', withdraw);
 
 });
