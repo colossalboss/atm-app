@@ -4,10 +4,9 @@ body {
 
 #container-first {
   width: 100%;
-  height: 400px;
   padding: 1px;
   overflow-y: scroll;
-
+  height: 100vh;
 }
 
 #title {
@@ -25,7 +24,7 @@ body {
 }
 
 .option {
-  width: 49%;
+  width: 48%;
   margin: 30px 2px;
 }
 
@@ -49,45 +48,28 @@ button {
   width: 100px;
   color: green;
 }
-/*
-@media screen and (min-width: 550px) {
-  .right  {
-    position: fixed;
-    right: 1em;
-    font-size: 2rem;
-  }
 
-  .left  {
-    position: fixed;
-    left: 1em;
-    font-size: 2rem;
+@media screen and (min-width: 551px) {
+  .size  {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #container  {
+    width:80%;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .right  {
-    position: fixed;
-    right: 0.5em;
-    font-size: 1rem;
-  }
-
-  .left  {
-    position: fixed;
-    left: 0.5em;
-    font-size: 1rem;
+  .size  {
+    font-size: inherit;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .right  {
-    position: fixed;
-    right: 0.5em;
-    font-size: 0.8rem;
+  .size  {
+    font-size: 10px;
   }
-
-  .left  {
-    position: fixed;
-    left: 0.5em;
-    font-size: 0.8rem;
-  }
-} */
+}
