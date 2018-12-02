@@ -1,4 +1,4 @@
-// $(function(){
+$(function(){
   let input = document.getElementById('input-field');
 
   function check(e) {
@@ -23,4 +23,4 @@
 
   $('#btn').on('click', check)
 
-// });
+});
