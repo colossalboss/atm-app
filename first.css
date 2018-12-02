@@ -8,8 +8,12 @@ body {
   padding: 1px;
 }
 
-#title,
+#title {
+  text-align: center;
+}
+
 .select {
+  font-family: 'Lobster', cursive;
   text-align: center;
 }
 
