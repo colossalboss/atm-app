@@ -24,6 +24,18 @@ body {
   margin: 40px 2px;
 }
 
+.option input {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+.option input:hover {
+  cursor: pointer;
+  border: 2px solid green;
+
+}
+
 .fa {
   width: 100px;
   color: green;
