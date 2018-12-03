@@ -45,9 +45,15 @@ $(function(){
         $('#display').empty();
         $('#you').html('');
         $('#display').append('<div class="select"><h1>Done!</h1><p>Collect your cash</p><i class="fa fa-money" aria-hidden="true"></i></div>');
-        $('#display').append('<h2 class="select">Have a nice day.');
+        $('#display').append('<h2 class="select">Have a nice day.</h2>');
+        $('#display').append('<p class="center"><button class="size">Exit</button></p>');
       }, 1500);
     })
+  });
+
+  $('#display').on('click', '.center', function() {
+    $('body').empty();
+    $('body').load('index.html');
   });
 
 });
